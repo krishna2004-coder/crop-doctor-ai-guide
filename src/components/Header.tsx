@@ -1,6 +1,4 @@
 
-import { settings } from 'lucide-react';
-
 export const Header = () => {
   return (
     <header className="bg-white shadow-sm border-b border-green-200">

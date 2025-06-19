@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
-import { camera, image } from 'lucide-react';
+import { Camera, Image } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface ImageUploadProps {
@@ -79,7 +79,7 @@ export const ImageUpload = ({ onImageUpload, isLoading }: ImageUploadProps) => {
   return (
     <Card className="p-6">
       <h2 className="text-xl font-semibold text-green-800 mb-4 flex items-center">
-        <camera className="mr-2" size={24} />
+        <Camera className="mr-2" size={24} />
         Upload Plant Image
       </h2>
       
@@ -116,7 +116,7 @@ export const ImageUpload = ({ onImageUpload, isLoading }: ImageUploadProps) => {
           </div>
         ) : (
           <div className="space-y-4">
-            <image size={48} className="mx-auto text-green-400" />
+            <Image size={48} className="mx-auto text-green-400" />
             <div>
               <p className="text-lg font-medium text-green-700 mb-2">
                 Drag and drop your plant image here
